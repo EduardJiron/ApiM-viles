@@ -1,0 +1,48 @@
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    position: relative;
+    right: -20;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    right: -20px;
+    line-height: inherit;
+}
+.inn{
+    position: relative;
+    right: -40px;
+}
+
+.inc{
+    position: relative;
+    right: -55px; 
+}
+.ina{
+    position: relative;
+    right: -22px; 
+}
+
+#btn{
+    position: relative;
+    right: -120px; 
+}
+.tbl2{
+    position: relative;
+    right: -25px; 
+    bottom: -20px;
+}
+.insertar{
+    position: relative;
+    right: -25px; 
+    bottom: -20px;
+}
+.tbl1{
+    position: relative;
+    right: -25px; 
+    bottom: -20px; 
+}
