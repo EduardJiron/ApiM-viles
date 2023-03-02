@@ -1,5 +1,5 @@
 <?php
-include 'filtrarId.php';
+include_once '../datos/apiMetodos.php';
 ?>
 
 <html>
@@ -7,11 +7,9 @@ include 'filtrarId.php';
 <title>Insertar datos</title>
 
 <meta charset="utf-8">
-
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 
 </head>
 <body>
@@ -21,17 +19,17 @@ if (window.history.replaceState) {
   window.history.replaceState(null, null, window.location.href);
 }   
 </script>
-<label class="ine">Buscar por nombre:</label>
+<label  class="ine">Buscar por nombres:</label>
 <br>
-<form class="form1" id="form1" action="post.php" method="post">
+<form class="form1" id="form1" action="index.php" method="post">
   <input class="in1" type="text" name="nombre" >
   <input  class="btn btn-outline-primary" form="form1" type="submit" value="Buscar">
- <div class="tbl1"><?php filtrarpornombre(); ?></div>
+  <div class="tbl1"><?php filtrarpornombre(); ?></div>
 </form>
 <br>
 <label>Insertar datos:<br></label>
 <br>
-<form class="form2" id="form2" action="post.php" method="post">
+<form class="form2" id="form2" action="index.php" method="post">
   <label>Nombre:</label> <input class="inn" type="text" name="Nombre"><br>
   <label>Abreviatura:</label><input class="ina" type="text" name="abreviatura"><br>
   <label>Capital:</label><input class="inc" type="text" name="Capital"><br>
@@ -44,7 +42,7 @@ if (window.history.replaceState) {
   if ($_POST['submit'] == 'Enviar') {
     agregardatos();
   }}
-   ?>
+  ?>
   </div>
 </form>
 <br>

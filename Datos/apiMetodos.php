@@ -1,7 +1,6 @@
 
 
 <html>
-
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -10,7 +9,6 @@
 
 function filtrarporid(){
     $sqli = new mysqli("localhost", "root", "", "pruebaapidb");
-  
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id']) && !empty($_POST['id'])) {
         $id = mysqli_real_escape_string($sqli, $_POST['id']);
         
@@ -64,8 +62,7 @@ function agregardatos(){
             $sqli->query($my_query);
 
             if ($sqli->affected_rows > 0) {
-                
-
+            
                 ?>
                 <span class="label label-success">Datos insertados correctamente</span>
                 <?php
